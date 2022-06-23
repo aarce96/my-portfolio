@@ -11,6 +11,7 @@ body {
 }
 /* Universal styling ends */
 /* Header styling starts */
+/* Using flexbox property here to flex-wrap, h1 */
 header {
     background-color: #36454f;
     display: flex;
@@ -35,6 +36,7 @@ header nav {
     margin: 7px 0;
 }
 
+/* Using flexbox property here to flex-wrap, nav ul*/
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +63,27 @@ header nav ul li a:hover {
 }
 
 .hero img {
-    width: 60%;
+    width: 35%;
 }
 /* Hero styling ends */
+/* Section styling starts */
+section {
+    display: flex;
+    text-align: left;
+    background: #36454f;
+    color: #7fffd4;
+    border: 5px solid;
+}
+
+section h3 {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    border-right: 5px solid #7fffd4;
+    text-align: right;
+}
+
+section p {
+    padding: 50px;
+}
+/* Section styling ends */
