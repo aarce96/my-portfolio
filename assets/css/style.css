@@ -9,6 +9,10 @@
 body {
     font-family: sans-serif, Arial, Helvetica;
 }
+
+h3 {
+    font-size: 30px;
+}
 /* Universal styling ends */
 /* Header styling starts */
 /* Using flexbox property here to flex-wrap, h1 */
@@ -17,12 +21,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 35px;
     border-bottom: 1px solid #7fffd4;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 50px;
     color: #7fffd4;
 }
 
@@ -30,11 +35,6 @@ header a {
     color: #7fffd4;
     text-decoration: none;
 }
-
-header nav {
-    margin: 7px 0;
-}
-
 /* Using flexbox property here to flex-wrap, nav ul*/
 header nav ul {
     display: flex;
@@ -50,75 +50,114 @@ header nav ul li a {
     font-size: 1.5vw;
 }
 
+/* Placed a psuedo-class here to change the following rules below */
 header nav ul li a:hover {
     background-color: #7fffd4;
     color: #000;
     border-radius: 15px;
 }
 /* Header styling ends */
-/* Hero styling starts */
+/*Hero styling starts */
 .hero {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+.hero h2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    font-size: 40px;
+    border-bottom: 2px solid;
 }
 
 .hero img {
-    width: 50%;
+    width: 30%;
+    border: 2px solid;
+    margin: 15px;
 }
 /* Hero styling ends */
 /* Description class styling starts */
 .description {
     display: flex;
+    margin: 50px 0; 
 }
 
 .description h3 {
     display: flex;
     border-right: 5px solid;
     text-align: right;
-    padding-top: 20px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding: 10px 20px 10px 90px;
 }
 
 .description p {
-    padding-top: 20px;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
+    padding: 50px;
 }
 /* Description class styling ends */
 /* Works class styling starts */
 .works {
     display: flex;
-    margin: 20px;
+    margin: 50px 0;
 }
 
 .works h3 {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px 29px;
+    padding: 10px 20px 10px 100px;
     border-right: 5px solid;
 }
 
 /* div class to make image clickable */
-.first-work {
+.works a {
     background-image: url(../images/run-buddy-img.png);
     background-size: cover;
     background-position: 85%;
     width: 700px;
     height: 700px;
-    margin: 0 35px;
-    padding: 20px 35px;
+    margin: 0 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
-.first-work a {
-    text-decoration: none;
+.work-title {
     background: #36454f;
     color: #7fffd4;
     padding: 50px;
 }
+/* Works section styling ends */
+/*Contact info styling starts */
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.contacts h3 {
+    padding: 10px 20px 10px 10px;
+    border-right: 5px solid;
+}
+
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    font-size: 22px;
+}
+
+.contacts ul li {
+    padding: 0 50px;
+}
+
+.contacts ul li a {
+    text-decoration: none;
+    border-bottom: 2px solid;
+    color: #000;
+}
+/* Contact info styling ends */
