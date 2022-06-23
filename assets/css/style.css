@@ -18,12 +18,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 35px;
+    border-bottom: 1px solid #7fffd4;
 }
 
 header h1 {
-    font-weight: bold;
     font-size: 36px;
-    margin: 0;
     color: #7fffd4;
 }
 
@@ -47,8 +46,8 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+    font-weight: light;
+    font-size: 1.5vw;
 }
 
 header nav ul li a:hover {
@@ -59,31 +58,67 @@ header nav ul li a:hover {
 /* Header styling ends */
 /* Hero styling starts */
 .hero {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .hero img {
-    width: 35%;
+    width: 50%;
 }
 /* Hero styling ends */
-/* Section styling starts */
-section {
+/* Description class styling starts */
+.description {
     display: flex;
-    text-align: left;
+}
+
+.description h3 {
+    display: flex;
+    border-right: 5px solid;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.description p {
+    padding-top: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+/* Description class styling ends */
+/* Works class styling starts */
+.works {
+    display: flex;
+    margin: 20px;
+}
+
+.works h3 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 29px;
+    border-right: 5px solid;
+}
+
+/* div class to make image clickable */
+.first-work {
+    background-image: url(../images/run-buddy-img.png);
+    background-size: cover;
+    background-position: 85%;
+    width: 700px;
+    height: 700px;
+    margin: 0 35px;
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-work a {
+    text-decoration: none;
     background: #36454f;
     color: #7fffd4;
-    border: 5px solid;
-}
-
-section h3 {
-    display: flex;
-    align-items: center;
-    padding: 35px;
-    border-right: 5px solid #7fffd4;
-    text-align: right;
-}
-
-section p {
     padding: 50px;
 }
-/* Section styling ends */
