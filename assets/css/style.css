@@ -1,0 +1,66 @@
+
+/* Universal styling starts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+}
+/* Universal styling ends */
+/* Header styling starts */
+header {
+    background-color: #36454f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    color: #7fffd4;
+}
+
+header a {
+    color: #7fffd4;
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background-color: #7fffd4;
+    color: #000;
+    border-radius: 15px;
+}
+/* Header styling ends */
+/* Hero styling starts */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 60%;
+}
+/* Hero styling ends */
