@@ -14,6 +14,7 @@ h3 {
     font-size: 30px;
 }
 /* Universal styling ends */
+
 /* Header styling starts */
 /* Using flexbox property here to flex-wrap, h1 */
 header {
@@ -48,13 +49,14 @@ header nav ul li a {
     font-size: 1.5vw;
 }
 
-/* Placed a psuedo-class here to change the following rules below */
+/* Placed a psuedo-class here (referenced run-buddy) */
 header nav ul li a:hover {
     background-color: #7fffd4;
     color: #000;
     border-radius: 15px;
 }
 /* Header styling ends */
+
 /*Hero styling starts */
 .hero {
     display: flex;
@@ -76,7 +78,8 @@ header nav ul li a:hover {
     margin: 15px;
 }
 /* Hero styling ends */
-/* Description class styling starts */
+
+/* About me section styling starts */
 .description {
     display: flex;
     margin: 50px 0; 
@@ -94,8 +97,9 @@ header nav ul li a:hover {
     line-height: 1.5;
     padding: 50px;
 }
-/* Description class styling ends */
-/* Works class styling starts */
+/* About me section styling ends */
+
+/* Work section styling starts */
 .works {
     display: flex;
     margin: 50px 0;
@@ -106,7 +110,7 @@ header nav ul li a:hover {
     border-right: 5px solid;
 }
 
-/* div class to make image clickable */
+/* This rule makes image clickable */
 .works a {
     background-image: url(../images/run-buddy-img.png);
     background-size: cover;
@@ -122,13 +126,15 @@ header nav ul li a:hover {
     border: 2px solid;
 }
 
+/* This div class allows to change title on image (work section) */
 .work-title {
     background: #36454f;
     color: #7fffd4;
     padding: 50px;
 }
-/* Works section styling ends */
-/*Contact info styling starts */
+/* Work section styling ends */
+
+/*Contact me section styling starts */
 .contacts {
     display: flex;
     flex-wrap: wrap;
@@ -159,7 +165,9 @@ header nav ul li a:hover {
     color: #000;
 }
 /* Contact info styling ends */
+
 /* Media Queries */ 
+
 /* for smaller desktop screens */
 @media screen and (max-width: 980px) {
     .description p {
