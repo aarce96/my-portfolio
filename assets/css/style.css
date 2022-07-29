@@ -110,11 +110,26 @@ header nav ul li a:hover {
     border-right: 5px solid;
 }
 
-/* This rule makes image clickable */
-.works a {
+/* These ids makes images clickable */
+#runbuddy {
     background-image: url(../images/run-buddy-img.png);
     background-size: cover;
     background-position: 85%;
+    width: 700px;
+    height: 700px;
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid;
+}
+
+#myownlibrary {
+    background-image: url(../images/my-own-library-img.png);
+    background-size: cover;
+    background-position: 50%;
     width: 700px;
     height: 700px;
     margin: 0 50px;
