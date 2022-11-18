@@ -156,6 +156,21 @@ header nav ul li a:hover {
     border: 2px solid;
 }
 
+#animewatchify {
+    background-image: url(../images/anime-watchify.png);
+    background-size: cover;
+    background-position: 50%;
+    width: 700px;
+    height: 700px;
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid;
+}
+
 /* This div class allows to change title on image (work section) */
 .work-title {
     background: #36454f;
